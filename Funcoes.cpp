@@ -5,9 +5,9 @@ int myArray[] = { 1, 2, 3, 4, 5 };
 
 string letras[2][4];
 
-string letras2[2][4] = {
-    {"A","B","C","D"},
-    {"E","F","G","H"}
+char letras2[2][4] = {
+    {'A','B','C','D'},
+    {'E','F','G','H'}
 };
 
 int main(){
