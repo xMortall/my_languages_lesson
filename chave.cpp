@@ -1,99 +1,52 @@
 #include <iostream>
-#include <random>
-
 using namespace std;
 
 int main() {
-    char resposta;
+    int myArray[] = {1, 2};
 
-    random_device rd;
-    mt19937 gen(rd());
-    uniform_int_distribution<int> distNum(1, 50);
-    uniform_int_distribution<int> distEstrela(1, 12);
+    string letras2[5][10] = {
+        {"1","2","3","4","5","6","7","8","9","10"},
+        {"11","12","13","14","15","16","17","18","19","20"},
+        {"21","22","23","24","25","26","27","28","29","30"},
+        {"31","32","33","34","35","36","37","38","39","40"},
+        {"41","42","43","44","45","46","47","48","49","50"}
+    };
 
-    do {
-        system("clear"); 
-        
+    string numeros3[1][12] = {
+        {"1","2","3","4","5","6","7","8","9","10","11","12"}
+    };
 
-        int numeros[5];
-        int estrelas[2];
+    bool continueGenerating = true;
 
-        
-        for (int i = 0; i < 5; ++i) {
-            numeros[i] = 0;
-        }
-        for (int i = 0; i < 2; ++i) {
-            estrelas[i] = 0;
-        }
+    while (continueGenerating) {
+        cout << "Números da sorte são: ";
 
-        
-        for (int i = 0; i < 5; ++i) {
-            int num;
-            bool duplicado;
-            do {
-                duplicado = false;
-                num = distNum(gen);
-                for (int j = 0; j < i; ++j) {
-                    if (num == numeros[j]) {
-                        duplicado = true;
-                        break;
-                    }
-                }
-            } while (duplicado);
-            numeros[i] = num;
-        }
+        for (int i = 0; i < 5; i++) {
+            int choice = rand() % 2; // 0 para letras2, 1 para numeros3
 
-        
-        for (int i = 0; i < 2; ++i) {
-            int estrela;
-            bool duplicado;
-            do {
-                duplicado = false;
-                estrela = distEstrela(gen);
-                for (int j = 0; j < i; ++j) {
-                    if (estrela == estrelas[j]) {
-                        duplicado = true;
-                        break;
-                    }
-                }
-            } while (duplicado);
-            estrelas[i] = estrela;
-        }
-
-        
-        for (int i = 0; i < 4; ++i) {
-            for (int j = i + 1; j < 5; ++j) {
-                if (numeros[i] > numeros[j]) {
-                    int temp = numeros[i];
-                    numeros[i] = numeros[j];
-                    numeros[j] = temp;
-                }
+            if (choice == 0) {
+                int row = rand() % 5;
+                int column = rand() % 10;
+                cout << letras2[row][column] << " ";
+            } else {
+                int column = rand() % 12;
+                cout << numeros3[0][column] << " ";
             }
         }
 
-        for (int i = 0; i < 1; ++i) {
-            for (int j = i + 1; j < 2; ++j) {
-                if (estrelas[i] > estrelas[j]) {
-                    int temp = estrelas[i];
-                    estrelas[i] = estrelas[j];
-                    estrelas[j] = temp;
-                }
-            }
-        }
+        int firstStar = 1 + rand() % 12; // Estrela 1 na faixa de 1 a 12
+        int secondStar = 1 + rand() % 12; // Estrela 2 na faixa de 1 a 12
 
-        cout << "Chave do Euro Milhões: ";
-        for (int i = 0; i < 5; ++i) {
-            cout << numeros[i] << " ";
-        }
-        cout << "Estrelas: ";
-        for (int i = 0; i < 2; ++i) {
-            cout << estrelas[i] << " ";
-        }
-        cout << endl;
+        cout << "Estrelas: " << firstStar << " " << secondStar << endl;
 
-        cout << "Desejas gerar mais uma chave? (S/N) ";
-        cin >> resposta;
-    } while (resposta == 'S' || resposta == 's');
+        cout << "Gerar outra chave? (1 - Sim, 0 - Não): ";
+        int generateNewKey;
+        cin >> generateNewKey;
+
+        if (generateNewKey != 1) {
+            continueGenerating = false;
+        }
+    }
 
     return 0;
 }

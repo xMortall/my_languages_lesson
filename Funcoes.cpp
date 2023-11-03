@@ -5,7 +5,7 @@ int myArray[] = { 1, 2, 3, 4, 5 };
 
 string letras[2][4];
 
-char letras2[2][4] = {
+char letras2[3][33] = {
     {'A','B','C','D'},
     {'E','F','G','H'}
 };
