@@ -1,61 +1,121 @@
 #include <iostream>
+#include <fstream>
+#include <vector>
+#include <string>
 
 using namespace std;
 
-int main() {
-    char operacao;
-    double numero1, numero2, resultado;
-    bool continuar = true;
+struct Task {
+    string description;
+    bool completed;
 
-    while (continuar) {
-        cout << "Calculadora Simples em C++" << endl;
-        cout << "Digite 's' para calcular, 'q' para sair: ";
-        cin >> operacao;
+    Task(const string& desc, bool done = false) : description(desc), completed(done) {}
+};
 
-        if (operacao == 'q' || operacao == 'Q') {
-            continuar = false;
-            break;
-        }
+class TaskManager {
+private:
+    vector<Task> tasks;
+    string filename;
 
-        if (operacao != 's' && operacao != 'S') {
-            cout << "Opção inválida. Digite 's' para calcular ou 'q' para sair." << endl;
-            continue;
-        }
+public:
+    TaskManager(const string& file) : filename(file) {
+        loadTasks();
+    }
 
-        cout << "Digite a operação (+, -, *, /): ";
-        cin >> operacao;
+    void addTask(const string& description) {
+        tasks.push_back(Task(description));
+    }
 
-        cout << "Digite o primeiro número: ";
-        cin >> numero1;
-
-        cout << "Digite o segundo número: ";
-        cin >> numero2;
-
-        switch (operacao) {
-            case '+':
-                resultado = numero1 + numero2;
-                cout << "Resultado: " << resultado << endl;
-                break;
-            case '-':
-                resultado = numero1 - numero2;
-                cout << "Resultado: " << resultado << endl;
-                break;
-            case '*':
-                resultado = numero1 * numero2;
-                cout << "Resultado: " << resultado << endl;
-                break;
-            case '/':
-                if (numero2 != 0) {
-                    resultado = numero1 / numero2;
-                    cout << "Resultado: " << resultado << endl;
-                } else {
-                    cout << "Erro: Divisão por zero!" << endl;
-                }
-                break;
-            default:
-                cout << "Operação inválida. Por favor, digite +, -, *, ou /." << endl;
+    void markTaskAsCompleted(int index) {
+        if (index >= 0 && index < tasks.size()) {
+            tasks[index].completed = true;
         }
     }
+
+    void listTasks() {
+        for (int i = 0; i < tasks.size(); ++i) {
+            cout << (i + 1) << ". ";
+            if (tasks[i].completed) {
+                cout << "[X] ";
+            } else {
+                cout << "[ ] ";
+            }
+            cout << tasks[i].description << endl;
+        }
+    }
+
+    void saveTasks() {
+        ofstream file(filename);
+
+        if (file.is_open()) {
+            for (const Task& task : tasks) {
+                file << task.description << "|" << task.completed << endl;
+            }
+
+            file.close();
+        }
+    }
+
+    void loadTasks() {
+        ifstream file(filename);
+
+        if (file.is_open()) {
+            tasks.clear();
+            string line;
+
+            while (getline(file, line)) {
+                size_t pos = line.find("|");
+                if (pos != string::npos) {
+                    string description = line.substr(0, pos);
+                    bool completed = (line.substr(pos + 1) == "1");
+                    tasks.push_back(Task(description, completed));
+                }
+            }
+
+            file.close();
+        }
+    }
+};
+
+int main() {
+    TaskManager taskManager("tasks.txt");
+    int choice;
+
+    do {
+        cout << "Tarefas Pendentes:" << endl;
+        taskManager.listTasks();
+        cout << "Escolha uma opção:" << endl;
+        cout << "1. Adicionar Tarefa" << endl;
+        cout << "2. Marcar Tarefa como Concluída" << endl;
+        cout << "0. Sair" << endl;
+        cin >> choice;
+
+        switch (choice) {
+            case 1: {
+                cout << "Digite a descrição da tarefa: ";
+                string description;
+                cin.ignore();
+                getline(cin, description);
+                taskManager.addTask(description);
+                taskManager.saveTasks();
+                break;
+            }
+            case 2: {
+                int index;
+                cout << "Digite o número da tarefa a ser marcada como concluída: ";
+                cin >> index;
+                taskManager.markTaskAsCompleted(index - 1);
+                taskManager.saveTasks();
+                break;
+            }
+            case 0:
+                cout << "Saindo..." << endl;
+                break;
+            default:
+                cout << "Opção inválida. Tente novamente." << endl;
+                break;
+        }
+    } while (choice != 0);
 
     return 0;
 }
