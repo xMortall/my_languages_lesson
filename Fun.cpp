@@ -1,60 +1,45 @@
 #include <iostream>
-
 using namespace std;
 
-int main() {
-    char operacao;
-    double numero1, numero2, resultado;
-    bool continuar = true;
+int main(){
 
-    while (continuar) {
-        cout << "Digite 's' para calcular, 'q' para sair: ";
-        cin >> operacao;
+char choose;
+double num1, num2, resultado;
 
-        if (operacao == 'q' || operacao == 'Q') {
-            continuar = false;
-            break;
-        }
+cout << "Escolha entre +, -, *, / " << endl;
+cin >> choose;
 
-        if (operacao != 's' && operacao != 'S') {
-            cout << "Opção inválida. Digite 's' para calcular ou 'q' para sair." << endl;
-            continue;
-        }
+cout << "Escolha um numero" << endl;
+cin >> num1;
+cout << "Escolha outro numero" << endl;
+cin >> num2;
 
-        cout << "Digite a operação (+, -, *, /): ";
-        cin >> operacao;
-
-        cout << "Digite o primeiro número: ";
-        cin >> numero1;
-
-        cout << "Digite o segundo número: ";
-        cin >> numero2;
-
-        switch (operacao) {
-            case '+':
-                resultado = numero1 + numero2;
-                cout << "Resultado: " << resultado << endl;
-                break;
-            case '-':
-                resultado = numero1 - numero2;
-                cout << "Resultado: " << resultado << endl;
-                break;
-            case '*':
-                resultado = numero1 * numero2;
-                cout << "Resultado: " << resultado << endl;
-                break;
-            case '/':
-                if (numero2 != 0) {
-                    resultado = numero1 / numero2;
-                    cout << "Resultado: " << resultado << endl;
-                } else {
-                    cout << "Erro: Divisão por zero!" << endl;
-                }
-                break;
-            default:
-                cout << "Operação inválida. Por favor, digite +, -, *, ou /." << endl;
-        }
+switch (choose)
+{
+case '+':
+    resultado = num1 + num2;
+    cout << "O resultado é : " << resultado << endl;
+    break;
+    case '-':
+    resultado = num1 - num2;
+    cout << "O resultado é : " << resultado << endl;
+    break;
+    case '*':
+    resultado = num1 * num2;
+    cout << "O resultado é : " << resultado << endl;
+    break;
+    case '/':
+    resultado = num1 / num2;
+    if (num2 != 0){
+        cout << "O resultado é : " << resultado << endl;
+    }else{
+        cout << "É impossivel resolver" << endl;
     }
+    break;
 
+default:
+    cout << "impossivel resolver" << endl;
+    break;
+}
     return 0;
 }

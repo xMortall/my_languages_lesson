@@ -1,7 +1,7 @@
 Olá turma bem vindo ao pessadelo
 que é a informática
 
-git cloen 
+git clone
 git status
 git add -A 
 git commit 
