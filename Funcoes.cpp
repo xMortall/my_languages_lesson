@@ -17,5 +17,7 @@ int main(){
         }
     }
 
+    cout << "teste" << endl;
+
     return 0;
 };
