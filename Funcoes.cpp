@@ -21,3 +21,10 @@ int main(){
 
     return 0;
 };
+
+void ola(string msg){
+
+    cout << msg << endl;
+    
+}
+
