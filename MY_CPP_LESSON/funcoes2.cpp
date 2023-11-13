@@ -1,16 +1,21 @@
 #include <iostream>
 using namespace std;
 
+
+
 int main(){
+
 
     char choose;
     double num1, num2, resultado;
 
-    cout << "Escolha entre +, -, *, /" << endl;
+    cout << "Que tipo de conta quer fazer : +, -, *, /" << endl;
     cin >> choose;
-    cout << "Esoclhe um numero" << endl;
+
+    cout << "Escolhe um numero" << endl;
     cin >> num1;
-    cout << "Escolhe outro numero" << endl;
+
+    cout << "Escolha outro numero" << endl;
     cin >> num2;
 
     switch (choose)
@@ -25,19 +30,20 @@ int main(){
         resultado = num1 * num2;
         break;
         case '/':
-        if (num2 != 0){
+        if(num2 !=0){
             resultado = num1 / num2;
-        }else{
-            cout << "Impossivel dividir por 0" << endl;
+        }else {
+            cout << "Erro" << endl;
         }
         break;
     
     default:
-        cout << "Impossivel resolver " << endl;
+        cout << "Erro" << endl;
         break;
     }
 
     cout << "Resultado é " << resultado << endl;
-    
-    return 0;
+
+
+
 }
