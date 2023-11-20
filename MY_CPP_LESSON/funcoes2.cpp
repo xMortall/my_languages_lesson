@@ -1,49 +1,46 @@
 #include <iostream>
 using namespace std;
 
-
-
 int main(){
 
-
     char choose;
-    double num1, num2, resultado;
+    double num1, num2, result;
 
-    cout << "Que tipo de conta quer fazer : +, -, *, /" << endl;
+    cout << "Escolha entre + , - , * , /" << endl;
     cin >> choose;
 
-    cout << "Escolhe um numero" << endl;
+    cout << "Escolha um numero" << endl;
     cin >> num1;
 
-    cout << "Escolha outro numero" << endl;
+    cout << "Escolha outra numero" << endl;
     cin >> num2;
 
     switch (choose)
     {
     case '+':
-        resultado = num1 + num2;
+        result = num1 + num2;
         break;
-        case '-':
-        resultado = num1 - num2;
+    case '-':
+        result = num1 - num2;
         break;
-        case '*':
-        resultado = num1 * num2;
+    case '*':
+        result = num1 * num2;
         break;
-        case '/':
-        if(num2 !=0){
-            resultado = num1 / num2;
-        }else {
-            cout << "Erro" << endl;
-        }
+    case '/':
+    if (num2 !=0){
+        result = num1 / num2;
+    }else{
+        cout << "Erro" << endl;
+    }
         break;
     
-    default:
-        cout << "Erro" << endl;
+    default: cout << "Erro" << endl;
         break;
     }
 
-    cout << "Resultado é " << resultado << endl;
+cout << "Resultado é " << result << endl;
 
 
 
+    return 0;
 }
