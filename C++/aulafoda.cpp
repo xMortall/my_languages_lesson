@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main(){
@@ -6,6 +7,7 @@ int main(){
     char choose;
     double num1, num2, result;
 
+    cout <<"Ola" << endl;
     cout <<"Escolha entre +, -, *, / " << endl;
     cin >> choose;
     cout << "Escolha um numero " << endl;
