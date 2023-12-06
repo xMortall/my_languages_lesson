@@ -14,4 +14,4 @@ int main(){
     cout << meal << "\n";
     cout << &meal << "\n";
     return 0;
-}
+};
