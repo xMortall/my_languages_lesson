@@ -23,3 +23,31 @@ C++ Arrays✅<br>
 C++ Structures✅<br>
 C++ References✅<br>
 C++ Pointers✅ <br>
+C++ Functions✅<br>
+C++ Functions✅<br>
+C++ Function Parameters✅<br>
+C++ Function Overloading✅<br>
+C++ Recursion✅<br>
+<br>
+C++ Classes❌<br>
+<br>
+In HTML:
+HTML HOME✅<br>
+HTML Introduction✅<br>
+HTML Editors✅<br>
+HTML Basic✅<br>
+HTML Elements✅<br>
+HTML Attributes✅<br>
+HTML Headings✅<br>
+HTML Paragraphs✅<br>
+HTML Styles✅<br>
+HTML Formatting✅<br>
+HTML Quotations✅<br>
+HTML Comments✅<br>
+HTML Colors✅<br>
+HTML CSS✅<br>
+HTML Links✅<br>
+HTML Images✅<br>
+HTML Favicon✅<br>
+HTML Page Title✅<br>
+HTML Tables❌ <br>
