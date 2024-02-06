@@ -1,8 +1,7 @@
 # my_cpp_lesson
-Here we have a summary of my classes in different languages.
-\n
-In c++ :
-C++ HOME✅
+Here we have a summary of my classes in different languages.<br>
+In c++ :<br>
+C++ HOME✅<br>
 C++ Intro✅
 C++ Get Started✅
 C++ Syntax✅
