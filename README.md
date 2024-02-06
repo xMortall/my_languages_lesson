@@ -2,24 +2,24 @@
 Here we have a summary of my classes in different languages.<br>
 In c++ :<br>
 C++ HOME✅<br>
-C++ Intro✅
-C++ Get Started✅
-C++ Syntax✅
-C++ Output✅
-C++ Comments✅
-C++ Variables✅
-C++ User Input✅
-C++ Data Types✅
-C++ Operators✅
-C++ Strings✅
-C++ Math✅
-C++ Booleans✅
-C++ Conditions✅
-C++ Switch✅
-C++ While Loop✅
-C++ For Loop✅
-C++ Break/Continue✅
-C++ Arrays✅
-C++ Structures✅
-C++ References✅
-C++ Pointers✅ 
+C++ Intro✅<br>
+C++ Get Started✅<br>
+C++ Syntax✅<br>
+C++ Output✅<br>
+C++ Comments✅<br>
+C++ Variables✅<br>
+C++ User Input✅<br>
+C++ Data Types✅<br>
+C++ Operators✅<br>
+C++ Strings✅<br>
+C++ Math✅<br>
+C++ Booleans✅<br>
+C++ Conditions✅<br>
+C++ Switch✅<br>
+C++ While Loop✅<br>
+C++ For Loop✅<br>
+C++ Break/Continue✅<br>
+C++ Arrays✅<br>
+C++ Structures✅<br>
+C++ References✅<br>
+C++ Pointers✅ <br>
