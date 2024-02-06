@@ -1,0 +1,28 @@
+#main {
+    width: 960px;
+    padding: 10px 20px;
+    background: black;
+    margin: 0 auto;
+    color: white;
+}
+#main .row {
+    padding: 5px;
+    border-bottom: 5px solid red;
+    margin-bottom: 30px;
+}
+#main_he{
+
+}
+#main ul{   
+    background: black;
+    color: red;
+    border: 5px solid red
+} 
+#main ul li{
+    background-color: rgb(34, 34, 34);
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
