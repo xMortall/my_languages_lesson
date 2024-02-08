@@ -1,0 +1,72 @@
+#main {
+    width: 960px;
+    padding: 10px 20px;
+    background: white;
+    margin: 0 auto;
+    color: black;
+}
+
+#menu {
+    width: 100%;
+    margin: 0 auto; 
+}
+
+#menu a {
+    display: inline-block;
+    width: 20%;
+    background: rgb(27, 27, 27);
+    color: white;
+    text-align: center;
+    padding: 14px 0;
+    text-decoration: none;
+    margin: 20px; 
+}
+
+.Lista {
+    display: flex;
+    background-color: orange;
+    border: 5px solid black;
+}
+
+.lista-e-conteudo {
+    flex-grow: 1;
+}
+
+.Lista ul {
+    border: 2px solid black;
+    background-color: white;
+    padding: 40px;
+}
+
+.conteudo-adicional {
+    width: 300px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#menu a:hover {
+    background: orange;
+    
+}
+
+#main .row {
+    padding: 5px;
+    border-bottom: 5px solid black;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#footer {
+    background: black;
+}
+
+#galeria {
+    display: flex;
+    margin-top: 20px;
+    background-color: orange;
+    border: 5px solid black;
+}
+
+#galeria img {
+    margin: 10px;
+}
