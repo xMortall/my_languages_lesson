@@ -1,0 +1,73 @@
+#main {
+    width: 960px;
+    padding: 10px 20px;
+    background: black;
+    margin: 0 auto;
+    color: white;
+}
+#menu {
+    width: 100%;
+    margin: 0 auto; 
+}
+
+#menu a {
+    display: inline-block;
+    width: 20%;
+    background: rgb(27, 27, 27);
+    color: white;
+    text-align: center;
+    padding: 14px 0;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    background: red;
+}
+
+.blue {
+    color: blue;
+}
+
+#menu a {
+    margin: 20px; 
+}
+
+#menu a.red {
+    color: red; 
+}
+
+#main .row {
+    padding: 5px;
+    border-bottom: 5px solid red;
+    margin-bottom: 30px;
+}
+#main_he{
+    background: black;
+}
+#main ul{   
+    background: rgb(14, 13, 13);;
+    color: red;
+    border: 5px solid red
+} 
+#main ul li{
+    background-color: rgb(48, 47, 47);
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+#main ol{
+    background: rgb(14, 13, 13);
+    color: red;
+    border: 5px solid red
+}
+#main ol li{
+    background-color: rgb(48, 47, 47);
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
