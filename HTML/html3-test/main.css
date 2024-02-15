@@ -1,0 +1,65 @@
+#main {
+    width: 960px;
+    padding: 10px 20px;
+    background: white;
+    margin: 0 auto;
+    color: black;
+}
+
+#search-box {
+    float: right; 
+    margin-top: 20px; 
+}
+
+#search-input {
+    width: 200px; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#menu {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#menu a {
+    display: inline-block;
+    width: 20%;
+    background: rgb(27, 27, 27);
+    color: white;
+    text-align: center;
+    padding: 14px 0;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.conteudo-adicional {
+    width: 300px;
+    padding: 0 20px;
+    text-align: center;
+    float: right; 
+}
+
+.imagem {
+    margin-top: 10px;
+}
+
+.imagem h3,
+.imagem p {
+    margin: 0;
+}
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    border: 5px solid black;
+    margin: 0 auto;
+}
+
+#galeria img {
+    margin: 10px;
+    width: 200px;
+}
