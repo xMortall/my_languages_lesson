@@ -1,61 +1,67 @@
-# my_cpp_lesson
-> [!NOTE]
-> Here we have a summary of my classes in different languages.<br>
+# Minhas Lições de C++
 
-In c++ :<br>
-**-C++ HOME✅**<br>
-C++ Intro✅<br>
-C++ Get Started✅<br>
-C++ Syntax✅<br>
-C++ Output✅<br>
-C++ Comments✅<br>
-C++ Variables✅<br>
-C++ User Input✅<br>
-C++ Data Types✅<br>
-C++ Operators✅<br>
-C++ Strings✅<br>
-C++ Math✅<br>
-C++ Booleans✅<br>
-C++ Conditions✅<br>
-C++ Switch✅<br>
-C++ While Loop✅<br>
-C++ For Loop✅<br>
-C++ Break/Continue✅<br>
-C++ Arrays✅<br>
-C++ Structures✅<br>
-C++ References✅<br>
-C++ Pointers✅ <br>
-** * C++ Functions✅**<br>
-C++ Functions✅<br>
-C++ Function Parameters✅<br>
-C++ Function Overloading✅<br>
-C++ Recursion✅<br>
-**+ C++ Classes❌**<br>
-<br>
-**In HTML:**
-** HTML HOME**✅<br>
-HTML Introduction✅<br>
-HTML Editors✅<br>
-HTML Basic✅<br>
-HTML Elements✅<br>
-HTML Attributes✅<br>
-HTML Headings✅<br>
-HTML Paragraphs✅<br>
-HTML Styles✅<br>
-HTML Formatting✅<br>
-HTML Quotations✅<br>
-HTML Comments✅<br>
-HTML Colors✅<br>
-HTML CSS✅<br>
-HTML Links✅<br>
-HTML Images✅<br>
-HTML Favicon✅<br>
-HTML Page Title✅<br>
-HTML Tables✅ <br>
-HTML Lists✅<br>
-HTML Block & Inline✅<br>
-HTML Div✅<br>
-HTML Classes✅<br>
-HTML Id✅<br>
-HTML Iframes✅<br>
-HTML JavaScript❌<br>
+> [!NOTE]
+> Aqui está um resumo das minhas aulas em diferentes idiomas.
+
+## C++
+
+### Introdução
+
+- [x] [C++ HOME](#)
+- [x] [Introdução ao C++](#)
+- [x] [Iniciando com C++](#)
+- [x] [Sintaxe do C++](#)
+- [x] [Saída em C++](#)
+- [x] [Comentários em C++](#)
+- [x] [Variáveis em C++](#)
+- [x] [Entrada do Usuário em C++](#)
+- [x] [Tipos de Dados em C++](#)
+- [x] [Operadores em C++](#)
+- [x] [Strings em C++](#)
+- [x] [Matemática em C++](#)
+- [x] [Booleanos em C++](#)
+- [x] [Condições em C++](#)
+- [x] [Switch em C++](#)
+- [x] [Loop While em C++](#)
+- [x] [Loop For em C++](#)
+- [x] [Break/Continue em C++](#)
+- [x] [Arrays em C++](#)
+- [x] [Estruturas em C++](#)
+- [x] [Referências em C++](#)
+- [x] [Ponteiros em C++](#)
+- [x] [Funções em C++](#)
+- [x] [Parâmetros de Funções em C++](#)
+- [x] [Sobrecarga de Funções em C++](#)
+- [x] [Recursão em C++](#)
+- [ ] [Classes em C++](#)
+
+## HTML
+
+### Introdução
+
+- [x] [HTML HOME](#)
+- [x] [Introdução ao HTML](#)
+- [x] [Editores HTML](#)
+- [x] [Básico de HTML](#)
+- [x] [Elementos HTML](#)
+- [x] [Atributos HTML](#)
+- [x] [Cabeçalhos HTML](#)
+- [x] [Parágrafos HTML](#)
+- [x] [Estilos HTML](#)
+- [x] [Formatação HTML](#)
+- [x] [Citações HTML](#)
+- [x] [Comentários HTML](#)
+- [x] [Cores HTML](#)
+- [x] [CSS HTML](#)
+- [x] [Links HTML](#)
+- [x] [Imagens HTML](#)
+- [x] [Favicon HTML](#)
+- [x] [Título da Página HTML](#)
+- [x] [Tabelas HTML](#)
+- [x] [Listas HTML](#)
+- [x] [Bloco e Inline HTML](#)
+- [x] [Div HTML](#)
+- [x] [Classes HTML](#)
+- [x] [Id HTML](#)
+- [x] [Iframes HTML](#)
+- [ ] [JavaScript HTML](#)
