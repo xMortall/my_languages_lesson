@@ -5,7 +5,7 @@
 
 # C++
 
-## Introduction
+# Introduction
 
 #### C++ HOME [Link](https://www.w3schools.com/cpp/)
 - ✅ [C++ Introduction](#)
@@ -38,7 +38,7 @@
 
 # HTML
 
-## Introduction
+# Introduction
 
 #### HTML HOME [Link](https://www.w3schools.com/html/default.asp)
 - ✅ [HTML Introduction](#)
