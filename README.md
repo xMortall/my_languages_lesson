@@ -7,7 +7,7 @@
 
 ## Introduction
 
-### C++ HOME [EFF](https://www.w3schools.com/cpp/)
+#### C++ HOME [Link](https://www.w3schools.com/cpp/)
 - ✅ [C++ Introduction](#)
 - ✅ [Getting Started with C++](#)
 - ✅ [C++ Syntax](#)
@@ -29,18 +29,18 @@
 - ✅ [Structures in C++](#)
 - ✅ [References in C++](#)
 - ✅ [Pointers in C++](#)
-### Functions  in C++
+#### Functions  in C++
 - ✅ [Functions in C++](#)
 - ✅ [Function Parameters in C++](#)
 - ✅ [Function Overloading in C++](#)
 - ✅ [Recursion in C++](#)
-- ### ❌ Classes in C++
+- #### ❌ Classes in C++
 
 # HTML
 
 ## Introduction
 
-### HTML HOME [EFF](https://www.w3schools.com/html/default.asp)
+#### HTML HOME [Link](https://www.w3schools.com/html/default.asp)
 - ✅ [HTML Introduction](#)
 - ✅ [HTML Editors](#)
 - ✅ [Basic HTML](#)
