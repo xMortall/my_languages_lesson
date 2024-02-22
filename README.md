@@ -1,7 +1,7 @@
 # my_cpp_lesson
 Here we have a summary of my classes in different languages.<br>
 In c++ :<br>
-# C++ HOME✅<br>
+**C++ HOME✅**<br>
 C++ Intro✅<br>
 C++ Get Started✅<br>
 C++ Syntax✅<br>
@@ -23,14 +23,14 @@ C++ Arrays✅<br>
 C++ Structures✅<br>
 C++ References✅<br>
 C++ Pointers✅ <br>
-**# C++ Functions✅**<br>
+**C++ Functions✅**<br>
 C++ Functions✅<br>
 C++ Function Parameters✅<br>
 C++ Function Overloading✅<br>
 C++ Recursion✅<br>
-# TC++ Classes❌<br>
+C++ Classes❌<br>
 <br>
-In HTML:
+**In HTML:**
 HTML HOME✅<br>
 HTML Introduction✅<br>
 HTML Editors✅<br>
