@@ -5,48 +5,54 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 h2 {
     color: #333;
 }
-form {
-    background-color: #fff;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; /* Aumentando o espaço entre as caixas */
 }
-label {
-    font-weight: bold;
+
+.form-group {
+    margin-bottom: 20px; /* Aumentando o espaço entre as caixas e a borda */
+}
+
+.form-group label {
     display: block;
+    font-weight: bold;
     margin-bottom: 5px;
 }
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea,
-select {
-    width: calc(100% - 12px);
+.col2{
+    display: inline-block;
+    width: 45%;
+    padding: 2
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
     padding: 8px;
-    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-select {
-    width: calc(100% - 16px);
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
 }
-input[type="checkbox"] {
-    display: none;
-}
+
 .checkbox-group label {
-    display: inline-block;
-    width: calc(33.33% - 10px);
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
+
 .checkbox-group label input[type="checkbox"] {
     display: none;
 }
+
 .checkbox-group label span {
     padding: 8px 12px;
     background-color: #f0f0f0;
@@ -54,10 +60,12 @@ input[type="checkbox"] {
     cursor: pointer;
     display: block;
 }
+
 .checkbox-group label input[type="checkbox"]:checked + span {
     background-color: #4CAF50;
     color: white;
 }
+
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
@@ -66,6 +74,7 @@ input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
 }
+
 input[type="submit"]:hover {
     background-color: #45a049;
 }
