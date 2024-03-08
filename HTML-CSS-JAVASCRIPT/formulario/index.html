@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="myForm">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Nome">
+                <input type="text" id="username" placeholder="Username">
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <textarea id="textArea" placeholder="Digite algo aqui"></textarea>
+            <div class="input-group">
+                <input type="date" id="birthdate">
+                <select id="gender">
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                    <option value="other">Outro</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <input type="text" id="interests" placeholder="Interesses">
+                <input type="text" id="education" placeholder="Graus Acadêmicos">
+            </div>
+            <div class="loader-container">
+                <div class="loader" id="loader"></div>
+                <span id="loading-text">Carregando...</span>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <!-- Inclua o jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
