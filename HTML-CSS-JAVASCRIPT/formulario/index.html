@@ -1,44 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de registo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </head>
+<!-- https://jsfiddle.net/xnLatczg/ -->
 <body>
-    <div class="container">
-        <form id="myForm">
-            <div class="input-group">
-                <input type="text" id="name" placeholder="Nome">
-                <input type="text" id="username" placeholder="Username">
+    <div id="main" class="registo">
+        <h1>Formulario de Registo</h1>
+        <form action="registo.php" name="registo" method="GET">
+            <div class="row">
+                <div class="col2">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" placeholder="O seu nome..." />
+                </div>
+                <div class="col2">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" placeholder="Digite o username..." />
+                </div>
             </div>
-            <div class="input-group">
-                <input type="email" id="email" placeholder="Email">
-                <input type="password" id="password" placeholder="Password">
+            <div class="row">
+                <div class="col2">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="O seu email..." />
+                </div>
+                <div class="col2">
+                    <label for="password">Paswword:</label>
+                    <input type="password" name="password" id="password" placeholder="Digite a sua pass..." required="required" />
+                </div>
             </div>
-            <textarea id="textArea" placeholder="Digite algo aqui"></textarea>
-            <div class="input-group">
-                <input type="date" id="birthdate">
-                <select id="gender">
-                    <option value="male">Masculino</option>
-                    <option value="female">Feminino</option>
-                    <option value="other">Outro</option>
-                </select>
+            <div class="row">
+                <div class="col1">
+                    <label for="morada">Morada completa:</label>
+                    <textarea name="morada" id="morada"></textarea>
+                </div>
             </div>
-            <div class="input-group">
-                <input type="text" id="interests" placeholder="Interesses">
-                <input type="text" id="education" placeholder="Graus Acadêmicos">
+            <div class="row">
+                <div class="col2">
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" name="nascimento" id="nascimento"/>
+                </div>
+                <div class="col2">
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo" id="sexo">
+                        <option>escolha...</option>
+                        <option name="masc">Masculino</option>
+                        <option name="fem">Feminino</option>
+                    </select>
+                </div>
             </div>
-            <div class="loader-container">
-                <div class="loader" id="loader"></div>
-                <span id="loading-text">Carregando...</span>
+            <div class="row">
+                <div class="col3">
+                    <label for="interesses">Interesses</label>
+                    <input type="checkbox" name="musica" id="musica"/>
+                    <label for="musica">Musica</label>
+                </div>
+                <div class="col3">
+                    <input type="checkbox" name="desporto" id="desporto"/>
+                    <label for="desporto">Desporto</label>
+                </div>
+                <div class="col3">
+                    <input type="checkbox" name="inf" id="inf"/>
+                    <label for="inf">Informatica</label>
+                </div>
             </div>
-            <button type="submit">Enviar</button>
+            <div class="row">
+                <div class="col3">
+                    <input type="checkbox" name="politica" id="politica"/>
+                    <label for="politica">Politica</label>
+                </div>
+                <div class="col3">
+                    <input type="checkbox" name="carros" id="carros"/>
+                    <label for="carros">Carros</label>
+                </div>
+                <div class="col3">
+                    <input type="checkbox" name="video" id="video"/>
+                    <label for="video">Video</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col3">
+                    <label for="escolaridade">Escolaridade:</label>
+                    <input type="radio" name="basico" id="basico"/>
+                    <label for="basico">Basico</label>
+                </div>
+                <div class="col3">
+                    <input type="radio" name="secundario" id="secundario"/>
+                    <label for="secundario">Secundario</label>
+                </div>
+                <div class="col3">
+                    <input type="radio" name="superior" id="superior"/>
+                    <label for="superior">Superior</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col2">
+                    <input type="submit" name="submit" value="REGISTAR" />
+                </div>
+                <div class="col2">
+                    <input type="reset" name="reset" value="Limpar" />
+                </div>
+            </div>
         </form>
     </div>
-    <!-- Inclua o jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="main.js"></script>
+    <div id="loader">
+        <div class="box">
+            <span>A carregar...</span>
+            <button class="close">X</button>
+        </div>
+    </div>
 </body>
+
 </html>
