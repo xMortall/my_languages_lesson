@@ -1,0 +1,60 @@
+body {
+    background: lightgray;
+    padding: 0;
+    margin: 0;
+}
+#main {
+    width: 1080px;
+    margin: 0 auto;
+    background: white;
+    padding: 15px 25px;
+}
+#header .logo img {
+    display: block;
+    width: 100%
+}
+#header .right {
+    text-align: right;
+}
+.left {
+    display: inline-block;
+    width: 37%;
+    vertical-align: top;
+}
+.right {
+    display: inline-block;
+    width: 61%;
+}
+#menu {
+    margin: 40px 50px 0 0;
+    list-style: none;
+    padding: 0;
+}
+#menu a {
+    display: block;
+    padding: 10px;
+    background: red;
+    color: white;
+    text-align: center;
+}
+#menu a:hover {
+    background: black;
+}
+.col3 {
+    display: inline-block;
+    width: 31%;
+}
+.col3 a {
+    display: block;
+    padding: 10px;
+}
+.col3 a:hover {
+    background: lightgray;
+}
+.col3 img {
+    display: block;
+    width: 100%;
+}
+#footer .right {
+    text-align: right;
+}

@@ -1,0 +1,34 @@
+body{
+    background: gray;
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    background: white;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+.col1{
+    width: 30%;
+    background: green;
+    margin: 0;
+    border: 1px solid black;
+}
+.col2{
+    width: 80%;
+    height: 15%;
+    background: red;
+    margin: 0;
+    border: 1px solid black;
+    
+}
+.col3{
+    width: 30%;
+    background: blue;
+}
+.col4{
+    width: 70%;
+    background: yellow;
+}

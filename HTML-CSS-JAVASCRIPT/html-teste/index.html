@@ -1,7 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt">
 
 <head>
-    <title> Teste </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
     <link href="main.css" rel="stylesheet" />
 </head>
 
@@ -12,23 +15,29 @@
             <input type="text" id="search-input" placeholder="Pesquisar...">
         </div>
         <div class="row">
-            <img src="Lgenta.png" alt="ENTA" width="300"/>
-            
+            <img src="Lgenta.png" alt="ENTA" width="300" />
+
             <h1>Formação profissional</h1>
-            <img src="image.png" alt="ENTA" width="700"/>
+            <img src="image.png" alt="ENTA" width="700" />
             <div id="menu">
                 <a href="https://www.enta.store/documentos-e-horarios" title="Pinterest" target="_blank">Inscrições</a>
                 <a href="https://www.enta.store/apoios" title="Instagram" target="_blank">Apoios</a>
                 <a href="https://www.enta.store/fpif2023" title="Youtube" target="_blank">Formação de Formadores</a>
-                <a href="https://www.enta.store/politica-da-qualidade" title="Git Hub" target="_blank">Política da qualidade</a>   
+                <a href="https://www.enta.store/politica-da-qualidade" title="Git Hub" target="_blank">Política da qualidade</a>
+                <a href="https://sites.google.com/view/enta-cprob" id="contato">Programação e robótica</a>
+                <a href="https://livroreclamacoes.pt/Inicio/" id="sobre">Reclamações</a>
             </div>
         </div>
         <div class="Lista">
             <div class="lista-e-conteudo">
                 <ul>
-                    <li><a href="https://www.enta.store/_files/ugd/45105a_5fa46850bdf34924b6461a73decf224f.pdf" title="TIS" target="_blank">Técnico de Informática - Sistemas</a></li>
-                    <li><a href="https://www.enta.store/_files/ugd/45105a_b4559a57d9cf43299ed74284828031ae.pdf" title="TDL" target="_blank">Técnico de Logística</a></li>
-                    <li><a href="https://www.enta.store/_files/ugd/45105a_2917f7ece3a3442dadfa5cb96a6ef332.pdf" title="TDCQA" target="_blank">Técnico Especialista em Análises Laboratoriais e Qualidade Alimentar</a></li>
+                    <li><a href="https://www.enta.store/_files/ugd/45105a_5fa46850bdf34924b6461a73decf224f.pdf"
+                            title="TIS" target="_blank">Técnico de Informática - Sistemas</a></li>
+                    <li><a href="https://www.enta.store/_files/ugd/45105a_b4559a57d9cf43299ed74284828031ae.pdf"
+                            title="TDL" target="_blank">Técnico de Logística</a></li>
+                    <li><a href="https://www.enta.store/_files/ugd/45105a_2917f7ece3a3442dadfa5cb96a6ef332.pdf"
+                            title="TDCQA" target="_blank">Técnico Especialista em Análises Laboratoriais e Qualidade
+                            Alimentar</a></li>
                 </ul>
             </div>
             <div class="conteudo-adicional">
@@ -38,12 +47,32 @@
             </div>
         </div>
         <div id="galeria">
-            <a href="https://www.enta.store/_files/ugd/45105a_d33713fd1f0948ac8313c28b114da65f.pdf" title="Pinterest" target="_blank"><img src="TIS.png" alt="TIS" width="300"/></a>
-            <a href="https://www.enta.store/_files/ugd/45105a_2def7c1cb67b44eeae3ad22d55855261.pdf" title="Instagram" target="_blank"><img src="TDCQA.png" alt="TDCQA" width="300"/></a>
-            <a href="https://www.enta.store/_files/ugd/45105a_71facaa2656641b0b0f6ec105f812d05.pdf" title="Youtube" target="_blank"><img src="TDL.png" alt="TDL" width="300"/></a>
+            <a href="https://www.enta.store/_files/ugd/45105a_d33713fd1f0948ac8313c28b114da65f.pdf"
+                title="Pinterest" target="_blank"><img src="TIS.png" alt="TIS" width="300" /></a>
+            <a href="https://www.enta.store/_files/ugd/45105a_2def7c1cb67b44eeae3ad22d55855261.pdf"
+                title="Instagram" target="_blank"><img src="TDCQA.png" alt="TDCQA" width="300" /></a>
+            <a href="https://www.enta.store/_files/ugd/45105a_71facaa2656641b0b0f6ec105f812d05.pdf"
+                title="Youtube" target="_blank"><img src="TDL.png" alt="TDL" width="300" /></a>
+        </div>
+        <div id="contato-form" style="display: none;">
+            <h2>Entre em contato</h2>
+            <form id="form">
+                <label for="name">Nome:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Mensagem:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div id="sobre-info" style="display: none;">
+            <h2>Sobre nós</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor ligula nec felis eleifend, sit amet sodales leo congue. Phasellus efficitur vehicula aliquet. Sed rhoncus, mi sit amet hendrerit tempus, nunc felis luctus turpis, a volutpat felis orci vel nibh. Fusce eu erat mauris. Nulla facilisi. Integer ut nulla ac neque laoreet bibendum.</p>
         </div>
         <p>Copyright &copy; 2024/2025 - ENTA</p>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>

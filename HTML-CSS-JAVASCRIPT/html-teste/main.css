@@ -1,18 +1,28 @@
+body {
+    background-image: url('caminho/para/sua/imagem.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fce8e6; /* Cor de fundo mais vibrante */
+}
+
 #main {
     width: 960px;
     padding: 10px 20px;
-    background: white;
-    margin: 0 auto;
+    background: #fff;
+    margin: 50px auto; /* Centraliza o conteúdo verticalmente */
     color: black;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 #search-box {
-    float: right; /* Alinha o elemento à direita */
-    margin-top: 20px; /* Ajusta a margem conforme necessário */
+    float: right;
+    margin-top: 20px;
 }
 
 #search-input {
-    width: 200px; /* Ajuste a largura conforme necessário */
+    width: 200px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -20,25 +30,32 @@
 }
 
 #menu {
-    width: 100%;
-    margin: 0 auto; 
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    margin-top: 20px;
 }
 
 #menu a {
-    display: inline-block;
-    width: 20%;
-    background: rgb(27, 27, 27);
+    background: #ff7f0e; /* Cor de fundo laranja */
     color: white;
     text-align: center;
-    padding: 14px 0;
+    padding: 14px 20px; /* Aumenta o espaçamento interno
     text-decoration: none;
-    margin: 20px; 
+    border-radius: 20px; /* Borda arredondada */
+    margin: 0 10px; /* Espaçamento entre os botões */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+#menu a:hover {
+    background: #ffae42; /* Cor de fundo laranja mais clara ao passar o mouse */
 }
 
 .Lista {
     display: flex;
-    background-color: orange;
-    border: 5px solid black;
+    background-color: #ffa69e; /* Cor de fundo rosa */
+    border: 5px solid #ff7f0e; /* Borda laranja */
+    border-radius: 10px; /* Borda arredondada */
+    margin-top: 20px;
 }
 
 .lista-e-conteudo {
@@ -46,9 +63,10 @@
 }
 
 .Lista ul {
-    border: 2px solid black;
+    border: 2px solid #ff7f0e; /* Borda laranja */
     background-color: white;
     padding: 40px;
+    border-radius: 10px; /* Borda arredondada */
 }
 
 .conteudo-adicional {
@@ -57,29 +75,18 @@
     text-align: center;
 }
 
-#menu a:hover {
-    background: orange;
-    
-}
-
-#main .row {
-    padding: 5px;
-    border-bottom: 5px solid black;
-    margin-bottom: 30px;
-    text-align: left;
-}
-
-#footer {
-    background: black;
-}
-
 #galeria {
     display: flex;
+    justify-content: space-between;
     margin-top: 20px;
-    background-color: orange;
-    border: 5px solid black;
 }
 
 #galeria img {
     margin: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 10px; /* Borda arredondada */
+}
+
+#galeria img:hover {
+    transform: scale(1.1);
 }
