@@ -56,62 +56,34 @@ void stop() {
 }
 
 void fallowLine() {
-    if (Ir1ReadingL == 0 && Ir2ReadingL == 0 &&
-        Ir3ReadingL == 1 && Ir4ReadingL == 1 &&
+    if (Ir1ReadingL == 1 && Ir2ReadingL == 0 &&
+        Ir3ReadingL == 0 && Ir4ReadingL == 0 &&
         Ir5ReadingL == 0 && Ir6ReadingL == 0) {
-        forward(100, 100);
-    } else if (Ir1ReadingL == 1 && Ir2ReadingL == 0 &&
-               Ir3ReadingL == 0 && Ir4ReadingL == 1 &&
-               Ir5ReadingL == 1 && Ir6ReadingL == 1) {
-        forward(100, 100);
-    } else if (Ir1ReadingL == 0 && Ir2ReadingL == 0 &&
-               Ir3ReadingL == 1 && Ir4ReadingL == 1 &&
-               Ir5ReadingL == 1 && Ir6ReadingL == 1) {
-        forward(100, 100);
-        } else if (Ir1ReadingL == 0 && Ir2ReadingL == 0 &&
-               Ir3ReadingL == 1 && Ir4ReadingL == 1 &&
-               Ir5ReadingL == 1 && Ir6ReadingL == 0) {
-        forward(100, 100);
-        } else if (Ir1ReadingL == 0 && Ir2ReadingL == 1 &&
-               Ir3ReadingL == 1 && Ir4ReadingL == 1 &&
+        forward(160, 0);
+    } else if (Ir1ReadingL == 1 && Ir2ReadingL == 1 &&
+               Ir3ReadingL == 0 && Ir4ReadingL == 0 &&
                Ir5ReadingL == 0 && Ir6ReadingL == 0) {
-        forward(100, 100);
-        } else if (Ir1ReadingL == 0 && Ir2ReadingL == 1 &&
+        forward(140, 10);
+    } else if (Ir1ReadingL == 0 && Ir2ReadingL == 1 &&
                Ir3ReadingL == 1 && Ir4ReadingL == 0 &&
                Ir5ReadingL == 0 && Ir6ReadingL == 0) {
+        forward(100, 50);
+    } else if (Ir1ReadingL == 0 && Ir2ReadingL == 0 &&
+               Ir3ReadingL == 1 && Ir4ReadingL == 1 &&
+               Ir5ReadingL == 0 && Ir6ReadingL == 0) {
         forward(100, 100);
-        } else if (Ir1ReadingL == 0 && Ir2ReadingL == 0 &&
+    } else if (Ir1ReadingL == 0 && Ir2ReadingL == 0 &&
                Ir3ReadingL == 0 && Ir4ReadingL == 1 &&
                Ir5ReadingL == 1 && Ir6ReadingL == 0) {
-        forward(100, 100);
-        } else if (Ir1ReadingL == 1 && Ir2ReadingL == 0 &&
+        forward(50, 100);
+    } else if (Ir1ReadingL == 0 && Ir2ReadingL == 0 &&
                Ir3ReadingL == 0 && Ir4ReadingL == 0 &&
-               Ir5ReadingL == 0 && Ir6ReadingL == 0) {
-        forward(100, 100);
-        } else if (Ir1ReadingL == 0 && Ir2ReadingL == 0 &&
-               Ir3ReadingL == 0 && Ir4ReadingL == 0 &&
-               Ir5ReadingL == 0 && Ir6ReadingL == 1) {
-        forward(100, 100);
-        } else if (Ir1ReadingL == 1 && Ir2ReadingL == 1 &&
-               Ir3ReadingL == 0 && Ir4ReadingL == 0 &&
-               Ir5ReadingL == 0 && Ir6ReadingL == 0) {
-        forward(100, 100);
-        } else if (Ir1ReadingL == 0 && Ir2ReadingL == 0 &&
-               Ir3ReadingL == 0 && Ir4ReadingL == 0 &&
-               Ir5ReadingL == 0 && Ir6ReadingL == 1) {
-        forward(100, 100);
-        } else if (Ir1ReadingL == 0 && Ir2ReadingL == 1 &&
-               Ir3ReadingL == 1 && Ir4ReadingL == 1 &&
-               Ir5ReadingL == 1 && Ir6ReadingL == 0) {
-        forward(100, 100);
-        } else if (Ir1ReadingL == 0 && Ir2ReadingL == 1 &&
-               Ir3ReadingL == 1 && Ir4ReadingL == 1 &&
                Ir5ReadingL == 1 && Ir6ReadingL == 1) {
-        forward(100, 100);
-        } else if (Ir1ReadingL == 1 && Ir2ReadingL == 1 &&
-               Ir3ReadingL == 1 && Ir4ReadingL == 1 &&
-               Ir5ReadingL == 1 && Ir6ReadingL == 0) {
-        forward(100, 100);
+        forward(10, 140);
+    } else if (Ir1ReadingL == 0 && Ir2ReadingL == 0 &&
+                Ir3ReadingL == 0 && Ir4ReadingL == 0 &&
+                Ir5ReadingL == 0 && Ir6ReadingL == 1) {
+        forward(0, 160);
     }else {
         stop();
     }
