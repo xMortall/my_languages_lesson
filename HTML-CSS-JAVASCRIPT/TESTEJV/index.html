@@ -1,0 +1,56 @@
+<html>
+<!--
+    ENTA // TESTE DE JAVASCRIPT
+    Formador: Bruno Couto
+    Turma: 1º ano - Informática
+-->
+<head>
+    <title>Teste de Javascript</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <img src="images/logo.png" alt="Volkswagen" id="logo" />
+            <h1>Configurador Volkswagen T-Roc</h1>
+            <h3 id="selectedColor">A cor seleccionada é: <span></span><h3>
+        </div>
+
+        <div id="colors">
+            <h4>Escolha uma cor...</h4>
+            <dl class="car grey">
+                <dt><span></span>Cinza</dt>
+                <dd><img src="images/grey.jpg" alt="Cinza" /><dd>
+            </dl>
+            <dl class="car blue">
+                <dt><span></span>Azul</dt>
+                <dd><img src="images/blue.jpg" alt="Azul" /><dd>
+            </dl>
+            <dl class="car black">
+                <dt><span></span>Preto</dt>
+                <dd><img src="images/black.jpg" alt="Preto" /><dd>
+            </dl>
+            <dl class="car white">
+                <dt><span></span>Branco</dt>
+                <dd><img src="images/white.jpg" alt="Branco" /><dd>
+            </dl>
+        </div>
+
+        <div id="footer">
+            <h2>Enunciado:</h2>
+            <h5>No ficheiro main.js faça o código necessário para responder às questões abaixo.<br/>Comece o ficheiro JS com o seu primeiro e último nome em comentário.<br/>O HTML NÃO pode ser alterado.</h5>
+            <ol class="questions">
+                <li>Crie um mecanismo em Javascript para que, ao clicar numa cor, mostre a imagem do carro com a cor correspondente. A transição entre imagens deve ser feita em fade; <span>(9 valores)</span></li>
+                <li>Faça com que o nome da cor fique sublinhado e negrito, através de uma class CSS "active", garantindo que sempre que seleccionar uma as restantes não ficam seleccionadas; <span>(7 valores)</span></li>
+                <li>Escreva para o span do elemento #selectedColor, a cor seleccionada; <span>(4 valores)</span></li>
+                <li>*Pontos extra: Para as cores que não estão ativas, aplique uma class CSS "inactive" que ponha uma opacidade a 50% que pode vir para 100% em hover através de CSS; (3 pontos)</li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>

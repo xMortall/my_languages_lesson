@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+#header {
+    background: lightblue;
+    text-align: center;
+    color: darkblue;
+    padding: 30px 30px 20px;
+}
+#logo {
+    width: 140px;
+}
+#colors {
+    position: relative;
+    padding: 400px 0 20px;
+}
+#colors h4 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 180px;
+}
+#colors .car dd {
+    width: 740px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -370px;
+}
+#colors .car dd img {
+    display: block;
+    width: 100%;
+}
+#colors .car dt {
+    position: absolute;
+    padding: 0 20px 0 37px;
+    top: 377px;
+    left: 23%;
+    line-height: 23px;
+    color: #333;
+    z-index: 9999;
+    cursor: pointer;
+}
+#colors .car dt:hover {
+    text-decoration: underline !important;
+    opacity: 1 !important;
+}
+#colors .car dt.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+#colors .car dt.inactive {
+    font-weight: normal;
+    text-decoration: none;
+    opacity: 0.5;
+}
+#colors .car dt span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: grey;
+    border: 1px solid darkgrey;
+    border-radius: 50%;
+}
+#colors .car.blue dt {
+    left: 37%;
+}
+#colors .car.blue dt span {
+    background: blue;
+}
+#colors .car.black dt {
+    left: 52%;
+}
+#colors .car.black dt span {
+    background: black;
+}
+#colors .car.white dt {
+    left: 68%;
+}
+#colors .car.white dt span {
+    background: white;
+}
+#footer {
+    background: lightgrey;
+    padding: 20px 70px;
+}
+#footer li {
+    padding-bottom: 7px;
+}
+#colors .car dt.inactive:hover {
+    opacity: 1;
+}
+
