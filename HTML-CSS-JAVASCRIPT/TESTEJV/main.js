@@ -1,18 +1,25 @@
 // Nome: Emanuel Borges
 
 $(document).ready(function() {
+    var $colorsDt = $('#colors dt');
+    var $colorsDdImg = $('#colors dd img');
+    var $selectedColorSpan = $('#selectedColor span');
+    var $chooseColorText = $('#colors h4');
+
     function handleColorClick() {
-        $('#colors dt').removeClass('active').addClass('inactive');
+
+        $colorsDt.removeClass('active').addClass('inactive');
         $(this).removeClass('inactive').addClass('active');
 
-        let selectedColor = $(this).text();
-        $('#selectedColor span').text(selectedColor);
+        var selectedColor = $(this).text();
+        $selectedColorSpan.text(selectedColor);
 
-        let selectedImage = $(this).siblings('dd').find('img');
-        $('#colors dd img').stop(true, true).fadeOut();
-        selectedImage.stop(true, true).fadeIn();
+        var $selectedImage = $(this).siblings('dd').find('img');
+        $colorsDdImg.stop(true, true).fadeOut();
+
+        $selectedImage.stop(true, true).fadeIn();
+        $chooseColorText.fadeOut();
     }
-
-    $('#colors dd img').hide();
-    $('#colors dt').on('click', handleColorClick);
+    $colorsDdImg.hide();
+    $colorsDt.on('click', handleColorClick);
 });
